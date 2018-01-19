@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sousuo_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/sousuo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sousuo_image"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/sousuo_image"
+        android:layout_toRightOf="@+id/sousuo_image"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/sousuo_subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sousuo_title"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/sousuo_image"
+        android:layout_toRightOf="@+id/sousuo_image"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/sousuo_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sousuo_subhead"
+        android:layout_toEndOf="@+id/sousuo_image"
+        android:layout_toRightOf="@+id/sousuo_image"
+        android:text="TextView"
+        android:textColor="#ed0707"
+        android:textSize="20dp" />
+</RelativeLayout>

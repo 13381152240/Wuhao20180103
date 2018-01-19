@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linerr"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#99e6c845"
+        android:gravity="center"
+        android:text="购物车"
+        android:textColor="#c7950a"
+        android:textSize="25sp" />
+
+    <ExpandableListView
+        android:id="@+id/elv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:childIndicator="@null"
+        android:groupIndicator="@null"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/go_to_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#c9c9cc"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="你现在处于离线状态请去登录"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/go_to_login_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="去登陆"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="#e9cb7f"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="10sp"
+            android:focusable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/checkbox2"
+            android:gravity="center_vertical"
+            android:text="全选"
+            android:background="#e9cb7f"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#e9cb7f"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="合计 ："
+                android:textSize="10sp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="30dp"
+                android:text="0"
+                android:textSize="10sp"
+                android:textColor="@android:color/holo_red_light" />
+
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="80dp"
+                android:background="@android:color/holo_red_dark"
+                android:padding="10dp"
+                android:text="结算(0)"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
